@@ -15,6 +15,15 @@ Esta api esta creada para probar mis conocimientos con Spring Security añadiend
 - Spring MVC para las rutas y servidor emdebido
 - Docker
 
+## Levantar Proyecto
+
+Cambiar variables docker-compose o aplication.properties en caso de tener problemas con los puertos usados ya sea el
+8080 para el proyecto o el 5432 para la base de datos
+
+```bash
+docker compose up -d
+```
+
 ## Rutas
 
 ### Ruta para registrarse
@@ -66,4 +75,13 @@ GET http://localhost:8080/api/private
 
 ```http request
 GET http://localhost:8080/api/public
+```
+
+## Usuario Admin para probar los endpoints protegidos
+
+```json
+{
+  "email": "admin@gmail.com",
+  "password": "SecretPassword"
+}
 ```
