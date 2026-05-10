@@ -29,7 +29,7 @@ docker compose up -d
 ### Ruta para registrarse
 
 ```http request
-POST: http:/localhost:8080/auth/register
+POST http:/localhost:8080/auth/register
 ```
 
 Json necesario para cumplir la peticion
